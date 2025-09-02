@@ -3,13 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Famous jedi</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/graphik/stylesheet.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Famous jedi</h1>
-    <h2>Obi-Wan Kenobi</h2>
-    <img width="400" src="img/obi.jpg" alt="obi" />
-    <h2>Yoda</h2>
-    <img width="400" src="img/joda.jpg" alt="yoda" />
+    <header class="header">
+      <div class="header__overlay"></div>
+
+      <!-- NAVBAR -->
+      <nav class="header__nav" aria-label="Main">
+        <div class="header__container">
+          <!-- меню (десктоп) -->
+          <ul class="header__menu">
+            <li><a class="header__menu-link" href="index.html">Home</a></li>
+            <li>
+              <a class="header__menu-link" href="products.html">Product</a>
+            </li>
+            <li>
+              <a class="header__menu-link" href="pricing.html">Pricing</a>
+            </li>
+            <li><a class="header__menu-link" href="about.html">About</a></li>
+            <li>
+              <a class="header__menu-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- логотип по центру -->
+          <a class="header__logo" href="index.html" aria-label="Logo">
+            <img
+              class="header__logo-img"
+              src="img/global-header/site-logo.png"
+              alt="Site Logo"
+              width="120"
+              height="40"
+            />
+          </a>
+
+          <!-- соцмережі (десктоп) -->
+          <div class="header__socials">
+            <a class="header__social-link" href="#" aria-label="Twitter"
+              ><img
+                src="img/global-header/twitter-icon.png"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+            <a class="header__social-link" href="#" aria-label="Facebook"
+              ><img
+                src="img/global-header/facebook-icon.png"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+            <a class="header__social-link" href="#" aria-label="LinkedIn"
+              ><img
+                src="img/global-header/linkedin-icon.png"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+          </div>
+
+          <!-- бургер (мобайл) -->
+          <button
+            class="header__burger"
+            aria-label="Open menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="header__burger-bar"></span>
+            <span class="header__burger-bar"></span>
+            <span class="header__burger-bar"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- мобільне меню (оф-канвас) -->
+      <div id="mobile-menu" class="header__mobile" hidden>
+        <div class="header__mobile-inner">
+          <button class="header__mobile-close" aria-label="Close menu">
+            &times;
+          </button>
+
+          <a class="header__mobile-logo" href="index.html">
+            <img
+              src="img/global-header/site-logo.png"
+              alt="Site Logo"
+              width="112"
+              height="36"
+            />
+          </a>
+
+          <nav class="header__mobile-nav" aria-label="Mobile">
+            <a class="header__mobile-link" href="index.html">Home</a>
+            <a class="header__mobile-link" href="products.html">Product</a>
+            <a class="header__mobile-link" href="pricing.html">Pricing</a>
+            <a class="header__mobile-link" href="about.html">About</a>
+            <a class="header__mobile-link" href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header__mobile-socials">
+            <a href="#" aria-label="Twitter"
+              ><img
+                src="img/global-header/twitter-icon.png"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="img/global-header/facebook-icon.png"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+            <a href="#" aria-label="LinkedIn"
+              ><img
+                src="img/global-header/linkedin-icon.png"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__text">
+            <h1 class="hero__title">The best products start with Figma</h1>
+            <p class="hero__subtitle">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </p>
+            <a href="#" class="hero__cta">Try For Free</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <script src="main.js"></script>
   </body>
+  <script src="main.js"></script>
 </html>
